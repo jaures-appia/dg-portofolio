@@ -7,7 +7,10 @@ app = express()
 
 
 app.get('/', (req, res) => {
-    res.json("{ message : hello world }")
+    data = {
+        message : "hello world"
+    }
+    res.json(data)
 })
 
 app.listen(port, console.log("started on port 8080"))
