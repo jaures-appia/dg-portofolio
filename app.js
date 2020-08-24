@@ -7,7 +7,7 @@ app = express()
 
 
 app.get('/', (req, res) => {
-    res.send("<h1>HELLO DG</h1>")
+    res.json("{ message : hello world }")
 })
 
 app.listen(port, console.log("started on port 8080"))
